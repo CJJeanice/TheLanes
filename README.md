@@ -1,0 +1,1 @@
+The files in this code include everything for the website to work. This includes the files, pictures and pdf for the website. This project was made for my AACC class to complete my final requirment to pass the class. 
