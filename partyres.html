@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>THE LANES FORT MEADE :: Reservations</title>
+<meta charset="utf-8">
+<meta name="description" content="The Lanes Fort Meade well-designed amenities such as a pro shop, meeting room, and game room 
+create an inviting atmosphere for the customers. A convenient and efficient facility to enjoy your time while bowling.">
+<link rel="stylesheet" href="lanes.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<script>
+function validateForm() {
+if (document.forms[0].myEmail.value == "" ) {
+ alert("Please enter an e-mail address.");
+ return false;
+} // end if
+return true;
+} // end function validateForm
+</script>
+<h1>The Lanes Fort Meade</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="partyres.html">Reservations</a></li> 
+    <li><a href="snackbar.html">Snack Bar</a></li>
+	<li><a href="proshop.html">Pro-Shop</a></li>
+  </ul>
+</nav>
+<main>
+<h2>Reservations at The Lanes</h2>
+<h3>Contact Us</h3>
+<p>Required information is marked with an asterisk (*).</p>
+<form method="post" onsubmit="return validateForm();" action="http://webdevbasics.net/scripts/thelanes.php">
+<form method="post" action="https://webdevbasics.net/scripts/thelanes.php">
+<label for="myFName">First Name: </label><input type="text" id="myFName" name="myFName">
+<label for="myLName">Last Name: </label><input type="text" id="myLName" name="myLName">
+<label for="myEmail">* E-mail: </label><input type="email" name="myEmail" id="myEmail">
+<label for="myPhone">Phone: </label><input type="tel" id="myPhone" name="myPhone">
+<label for="myDate">Party Date: </label><input type="date" id="myDate" name="myDate">
+<label for="myHours">Hours: </label><input type="number" id="myHours" name="myHours" min="1" max="10">
+<label for="myComments">Comments: </label><textarea id="myComments" name="myComments" rows="2" cols="20"></textarea>
+<input type="submit" id="mySubmit" value="Submit">
+</form>
+
+</main>
+<footer>
+Copyright &copy; 2023 The Lanes Fort Meade<br>
+<a href="mailto:CJ@Jeanice.com">CJ@Jeanice.com</a>
+</footer>
+</div>
+</body>
+</html>
